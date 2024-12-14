@@ -1,0 +1,40 @@
+<?php
+
+
+$connection = mysqli_connect('localhost', 'root', '', 'easyhands_db');
+
+
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+if (isset($_POST['send'])) {
+    
+    $name = mysqli_real_escape_string($connection, $_POST['name']);
+    $email = mysqli_real_escape_string($connection, $_POST['email']);
+    $phone = mysqli_real_escape_string($connection, $_POST['phone']);
+    $address = mysqli_real_escape_string($connection, $_POST['address']);
+    $order_id = mysqli_real_escape_string($connection, $_POST['location']); 
+    $crop_id = mysqli_real_escape_string($connection, $_POST['guests']);
+    $quantity = mysqli_real_escape_string($connection, $_POST['arrivals']); 
+    $total_amount = mysqli_real_escape_string($connection, $_POST['leaving']); 
+
+   
+    $request = "INSERT INTO order_details (name, email, phone, address, order_id, crop_id, quantity, total_amount) 
+                VALUES ('$name', '$email', '$phone', '$address', '$order_id', '$crop_id', '$quantity', '$total_amount')";
+
+   
+    if (mysqli_query($connection, $request)) {
+        header('location:book.php'); 
+    } else {
+        echo "Error: " . mysqli_error($connection);
+    }
+
+} else {
+    echo 'Something went wrong. Please try again!';
+}
+
+
+mysqli_close($connection);
+
+?>

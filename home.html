@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   
+   <link rel="stylesheet" href="css/style.css">
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .search-container {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .search-container input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .search-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+
+</head>
+<body>
+   
+
+
+<section class="header">
+
+   <a href="home.php" class="logo">EasyHands.</a>
+
+   <nav class="navbar">
+      <a href="home.html">home</a>
+      <a href="about.html">about</a>
+      <a href="package.html">categories</a>
+      <a href="support.html">support</a>
+      <a href="cart.html">cart</a>
+      <a href="help.html">help</a>
+      <a href="farmerprofile.html">profile</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+
+
+<section class="home">
+<div class="search-container">
+        <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search for items..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+      <div class="swiper-slide slide" style="background-image: url(images/img17.jpeg);">
+
+            <div class="content">
+               <span></span>
+               <h3>Effortless Sales</h3>
+               
+            </div>
+         </div>
+         
+      </div>
+
+   </div>
+
+</section>
+
+
+<section class="services">
+
+   <h1 class="heading-title"> our services </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/img9.png" alt="">
+         <h3>orange</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/img10.png" alt="">
+         <h3>spices</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/img11.png" alt="">
+         <h3>apple</h3>
+      </div>
+
+      
+   </div>
+
+</section>
+
+
+
+<section class="home-about">
+
+   <div class="image">
+      <img src="images/img1.jpeg" alt="">
+   </div>
+
+   <div class="content">
+      <h3>about us</h3>
+      <p>Our app revolutionizes the way you discover and connect with local farmers and vendors, offering fresh, organic, and affordable produce right at your fingertips. Empowering communities, we bridge the gap between farms and your table with ease and convenience.</p>
+      <a href="about.php" class="btn">read more</a>
+   </div>
+
+</section>
+
+
+<section class="home-offer">
+   <div class="content">
+      <h3>upto 50% off</h3>
+      <p>Cristmas offer 50% on every product </p>
+      <a href="book.php" class="btn">order now</a>
+   </div>
+</section>
+
+<section class="footer">
+
+   <div class="box-container">
+
+   <div class="box">
+         <h3>quick links</h3>
+         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="package.php"> <i class="fas fa-angle-right"></i> categories</a>
+         <a href="book.php"> <i class="fas fa-angle-right"></i> cart</a>
+      </div>
+
+      <div class="box">
+         <h3>extra links</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+      </div>
+
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +91 8374928474 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +91 6785435678 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> easyhands@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> hassan ,india 573201</a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>EasyHands team</span> | all rights reserved! </div>
+
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

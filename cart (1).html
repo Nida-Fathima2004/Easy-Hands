@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>about</title>
+
+  
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  
+   
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #4CAF50;
+        }
+
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .cart-table th, .cart-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-table th {
+            background-color: #f4f4f4;
+        }
+
+        .cart-table img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .cart-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .cart-actions .total {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .cart-actions button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cart-actions button:hover {
+            background-color: #45a049;
+        }
+
+        .empty-cart {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .empty-cart p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .empty-cart button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .empty-cart button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<section class="header">
+
+   <a href="home.html" class="logo">EasyHands.</a>
+
+   <nav class="navbar">
+      <a href="home.html">home</a>
+      <a href="about.html">about</a>
+      <a href="package.html">categories</a>
+      <a href="support.html">support</a>
+      <a href="book.html">cart</a>
+      <a href="help.html">help</a>
+      <a href="farmerprofile.html">profile</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<div class="heading" style="background:url(images/img15.jpeg) no-repeat">
+   <h1>cart</h1>
+</div>
+<div class="container">
+        
+        <div class="header">
+            <h1>Your Cart</h1>
+            <p>Fresh produce directly from local farmers to your doorstep.</p>
+        </div>
+
+        
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <td>
+                        <img src="images/img22.jpeg" alt="Product Image">
+                        Fresh Tomatoes
+                    </td>
+                    <td>2.50Rs / kg</td>
+                    <td>
+                        <input type="number" value="2" min="1" style="width: 50px;">
+                    </td>
+                    <td>5.00Rs</td>
+                    <td>
+                        <button style="background: none; border: none; color: red; cursor: pointer;">Remove</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/img24.jpeg" alt="Product Image">
+                        Organic Potatoes
+                    </td>
+                    <td>1.80Rs / kg</td>
+                    <td>
+                        <input type="number" value="3" min="1" style="width: 50px;">
+                    </td>
+                    <td>5.40Rs</td>
+                    <td>
+                        <button style="background: none; border: none; color: red; cursor: pointer;">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-actions">
+            <div class="total">Total: 10.40Rs</div>
+            <button><a href="book.php"</a>Proceed to Checkout</button>
+        </div>
+
+    </div>
+<section class="footer">
+
+   <div class="box-container">
+
+   <div class="box">
+         <h3>quick links</h3>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="package.html"> <i class="fas fa-angle-right"></i> categories</a>
+         <a href="book.html"> <i class="fas fa-angle-right"></i> cart</a>
+      </div>
+
+      <div class="box">
+         <h3>extra links</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+      </div>
+
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +91 8374928474 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +91 6785435678 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> easyhands@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> hassan ,india 573201</a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>EasyHands team</span> | all rights reserved! </div>
+
+</section>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
